@@ -30,6 +30,7 @@ import { HomeComponent } from './home';
 import { AboutComponent } from './about';
 import { GalleryComponent } from './pages/gallery';
 import { UploadComponent } from './pages/upload';
+import { FolderUploadComponent } from './pages/folder-upload';
 import { NoContentComponent } from './no-content';
 import { XLargeDirective } from './home/x-large';
 
@@ -75,6 +76,7 @@ type StoreType = {
     NoContentComponent,
     GalleryComponent,
     XLargeDirective,
+    FolderUploadComponent,
     UploadComponent
   ],
   /**

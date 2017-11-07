@@ -51,10 +51,11 @@ export class HomeComponent implements OnInit {
 
   public ngOnInit() {
     
-    firebase.database().ref('/folders/test/').once('value').then((snapshot) => {
-      this.urlTest = snapshot.val();
-      console.log(this.urlTest);
-    });
+
+      firebase.database().ref('/folders/test/' + folderId).once('value').then((snapshot) => {
+        this.urlTest = snapshot.val();
+        console.log(this.urlTest);
+      });
 
     // Initialize collapse button
      // jQuery(".button-collapse").sideNav();
